@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Home - My Website{% endblock %}
+
+{% block background %}https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg{% endblock %}
+
+{% block content %}
+    <h1>Welcome to My Website</h1>
+    <p>Quick Links</p>
+    <a href="{% url 'about' %}" class="btn">About</a>
+    <a href="{% url 'services' %}" class="btn">Services</a>
+    <a href="{% url 'contacts' %}" class="btn">Contacts</a>
+{% endblock %}
