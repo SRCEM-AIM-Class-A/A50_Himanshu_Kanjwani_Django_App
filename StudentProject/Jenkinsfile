@@ -4,20 +4,20 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/your_username/your_project.git'
+                git 'https://github.com/SRCEM-AIM-Class-A/A50_Himanshu_Kanjwani_Django_App.git'
             }
         }
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t your_dockerhub_username/my-django-app .'
+                sh 'docker build -t himanshuk713/my-django-app .'
             }
         }
 
         stage('Push to Docker Hub') {
             steps {
                 withDockerRegistry([credentialsId: 'docker-hub-credentials', url: '']) {
-                    sh 'docker push your_dockerhub_username/my-django-app'
+                    sh 'docker push himanshuk713/my-django-app'
                 }
             }
         }
