@@ -1,4 +1,3 @@
-```
 # Django Multi-App Project
 
 ## Overview
@@ -11,40 +10,40 @@ A Django project with four independent apps, each serving its own webpage. This 
 
 ## Setup
 1. Clone repository:
-```bash
-git clone https://github.com/yourusername/projectname.git
-cd projectname
+```b
+git clone https://github.com/SRCEM-AIM-Class-A/A50_Himanshu_Kanjwani_Django_App.git
+cd StudentProject
 ```
 
 2. Create and activate virtual environment:
-```bash
+```
 python -m venv venv
+
 # Linux/macOS:
 source venv/bin/activate
 # Windows:
 venv\Scripts\activate
 ```
-
 3. Install dependencies:
-```bash
+```
 pip install -r requirements.txt
 ```
 
 4. Run migrations:
-```bash
+```
 python manage.py migrate
 ```
 
 5. Start development server:
-```bash
+```
 python manage.py runserver
 ```
 
 ## App Endpoints
-- App1: `http://localhost:8000/app1/` - [Brief description]
-- App2: `http://localhost:8000/app2/` - [Brief description]
-- App3: `http://localhost:8000/app3/` - [Brief description]
-- App4: `http://localhost:8000/app4/` - [Brief description]
+- App1: `http://localhost:8000/app1_home/` - App for Home Page; routes to home.html
+- App2: `http://localhost:8000/app2_about/` - App for About Page; routes to about.html
+- App3: `http://localhost:8000/app3_services/` - App for Services Page; routes to servives.html
+- App4: `http://localhost:8000/app4_contacts/` - App for Contacts Page; routes to contacts.html
 
 ## Project Structure
 ```
