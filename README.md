@@ -47,16 +47,19 @@ python manage.py runserver
 
 ## Project Structure
 ```
-project_root/
-├── app1/              # First app
+StudentProject/
+├── app1_home/         # Home app
 │   ├── views.py       # Business logic
 │   ├── urls.py        # URL routing
-│   └── templates/     # HTML templates
-├── app2/              # Second app
-├── app3/              # Third app
-├── app4/              # Fourth app
-├── project_name/      # Main config
+|   └── ...
+├── app2_about/        # About app
+├── app3_services/     # Services app
+├── app4_contacts/     # Contacts app
+├── StudentProject/    # Main config
 │   ├── settings.py    # Project settings
-│   └── urls.py        # Main URLs
+│   ├── urls.py        # Main URLs
+|   └── ...
+├── templates/         # HTML templates
+├── static/            # static files (CSS/JS)        
 └── manage.py          # Django CLI
 ```
